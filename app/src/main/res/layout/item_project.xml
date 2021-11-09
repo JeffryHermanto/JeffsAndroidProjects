@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="12dp"
@@ -23,10 +24,9 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_launcher_background" />
+                tools:src="@drawable/ic_launcher_background" />
 
         </androidx.cardview.widget.CardView>
-
 
         <TextView
             android:id="@+id/text_view_project_title"
@@ -35,9 +35,9 @@
             android:layout_alignTop="@id/card_view_project_icon_container"
             android:layout_toEndOf="@id/card_view_project_icon_container"
             android:fontFamily="sans-serif-medium"
-            android:text="The App Title"
             android:textColor="#222222"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:text="The App Title" />
 
         <TextView
             android:id="@+id/text_view_project_description"
@@ -47,10 +47,9 @@
             android:layout_marginTop="4dp"
             android:layout_toEndOf="@id/card_view_project_icon_container"
             android:fontFamily="sans-serif-light"
-            android:text="This will be the project description."
             android:textColor="#888888"
-            android:textSize="14sp" />
-
+            android:textSize="14sp"
+            tools:text="This will be our description for the project." />
 
     </RelativeLayout>
 
